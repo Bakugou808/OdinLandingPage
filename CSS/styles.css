@@ -16,7 +16,6 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 0 5px 0 5px;
   gap: 20px;
 }
 
@@ -33,7 +32,9 @@ body {
 .heroBanner {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 90px 8rem 100px 8rem;
+  background-color: #1f2937;
 }
 
 .heroTextContainer {
@@ -43,6 +44,79 @@ body {
 .heroImage {
   width: 50%;
   height: 50%;
+}
+
+.heroButton {
+  background-color: #3882f6;
+  flex: 1 0 250px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  border-style: none;
+}
+
+/* Info Section */
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 8rem 50px 8rem;
+}
+
+.infoHeaderText {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 60px;
+}
+
+.card {
+  flex: 0 1 calc(25% - 1em);
+}
+
+.card > img {
+  width: 100%;
+}
+
+.content > p {
+  font-size: 10px;
+  margin: 0px;
+}
+
+/* QUOTE SECTION */
+
+.quoteSection {
+  background-color: #e5e7eb;
+  padding: 60px 8rem;
+}
+
+.quoteContainer > p {
+  color: #1f2937;
+  padding-left: 100px;
+  padding-right: 60px;
+}
+
+.quote {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.author {
+  font-weight: 800;
+  text-align: end;
 }
 
 /* FOOTER */
@@ -66,6 +140,7 @@ body {
   color: #f9faf8;
   font-size: 48px;
   font-weight: bolder;
+  margin: 0px;
 }
 
 .text2 {
