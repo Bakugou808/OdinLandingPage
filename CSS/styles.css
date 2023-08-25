@@ -24,7 +24,7 @@ body {
 
 .header > p:not(.headerText) > a {
   color: #e5e7eb;
-  font-size: 18px;
+  font-size: calc(12px + 0.390625vw);
   text-decoration: none;
 }
 
@@ -35,14 +35,18 @@ body {
   align-items: flex-start;
   padding: 90px 8rem 100px 8rem;
   background-color: #1f2937;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .heroTextContainer {
   padding-right: 10px;
+  flex: 1;
 }
 
 .heroImage {
-  width: 50%;
+  width: 60%;
+  min-width: 270px;
   height: 50%;
 }
 
@@ -85,6 +89,7 @@ body {
 
 .card {
   flex: 0 1 calc(25% - 1em);
+  min-width: 7rem;
 }
 
 .card > img {
@@ -124,6 +129,8 @@ body {
 .ctaSection {
   background-color: white;
   padding: 60px 8rem;
+  display: flex;
+  justify-content: center;
 }
 
 .cta {
@@ -134,6 +141,8 @@ body {
   border-radius: 10px;
   padding: 2rem;
   gap: 1rem;
+  width: 62%;
+  flex-wrap: wrap;
 }
 
 .ctaTextContainer {
@@ -185,7 +194,7 @@ body {
 
 .heroText {
   color: #f9faf8;
-  font-size: 48px;
+  font-size: 2rem;
   font-weight: bolder;
   margin: 0px;
 }
